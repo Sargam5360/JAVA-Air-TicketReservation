@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.aa.entity.Flight" table="FLIGHT">
+      <meta attribute="class-description">
+         This class contains the fLIGHT detail. 
+      </meta>
+      <id name="id" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="source" column="source" type="string"/>
+      <property name="destination" column="destination" type="string"/>
+      <property name="tickets" column="tickets" type="int"/>
+            <property name="arrival" column="arrivaltime" type="int"/>
+            <property name="date" column="dateofflight" type="date"/>
+            <property name="cost" column="price" type="int"/>
+                        <property name="departure" column="departuretime" type="int"/>
+            
+      
+ 
+	   
+   </class>
+   
+    
+</hibernate-mapping>
